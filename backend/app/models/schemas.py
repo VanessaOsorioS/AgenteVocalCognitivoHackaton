@@ -40,3 +40,35 @@ class SaludResponse(BaseModel):
 
     estado: Literal["ok"] = "ok"
     servicio: str
+
+
+class ConversacionRequest(BaseModel):
+    """Cuerpo aceptado por POST /api/conversacion."""
+
+    texto: str = Field(
+        min_length=1,
+        max_length=2000,
+        description="Intervención del usuario transcrita por voz",
+    )
+
+
+class ConversacionResponse(BaseModel):
+    """Respuesta exitosa de POST /api/conversacion."""
+
+    estado: Literal["exito"] = "exito"
+    respuesta: str
+    sentimiento: str = "neutro"
+    emocion: str = "neutral"
+    query: Optional[str] = None
+    filas: Optional[int] = None
+    tiempo_ms: Optional[int] = None
+
+
+class TtsRequest(BaseModel):
+    """Cuerpo aceptado por POST /api/tts."""
+
+    texto: str = Field(
+        min_length=1,
+        max_length=5000,
+        description="Texto del asistente que se sintetiza con ElevenLabs",
+    )

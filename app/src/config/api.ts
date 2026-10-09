@@ -10,3 +10,8 @@ export const API_BASE_URL =
 
 export const ENDPOINT_SALUD = `${API_BASE_URL}/api/salud`;
 export const ENDPOINT_CONSULTA = `${API_BASE_URL}/api/consulta`;
+export const ENDPOINT_CONVERSACION = `${API_BASE_URL}/api/conversacion`;
+export const ENDPOINT_CONVERSACION_STREAM = `${API_BASE_URL}/api/conversacion/stream`;
+export const ENDPOINT_TTS = `${API_BASE_URL}/api/tts`;
+export const ENDPOINT_TTS_STREAM = `${API_BASE_URL}/api/tts/stream`;
+export const ENDPOINT_STT_TOKEN = `${API_BASE_URL}/api/stt/token`;
