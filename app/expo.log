@@ -1,0 +1,8 @@
+Starting project at C:\Users\ASUS\Documents\Hackaton2026\ProyectoBase\app
+Metro is running in CI mode, reloads are disabled. Remove CI=true to enable watch mode.
+Starting Metro Bundler
+
+Waiting on http://localhost:8081
+
+Logs for your project will appear below.
+Web Bundled 9694ms index.ts (239 modules)

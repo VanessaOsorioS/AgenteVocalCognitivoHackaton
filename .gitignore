@@ -1,0 +1,11 @@
+# Python (backend)
+backend/.venv/
+backend/__pycache__/
+backend/app/**/__pycache__/
+backend/*.log
+
+# Node (app Expo)
+app/node_modules/
+app/.expo/
+app/web-build/
+app/dist/
